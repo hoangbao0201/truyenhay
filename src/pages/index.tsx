@@ -7,7 +7,7 @@ import { GetStaticProps } from 'next';
 import { getComicsNew } from '@/services/comics';
 import ListComics from '@/components/share/ListComics';
 import PageTitle from '@/components/share/PageTitle';
-import { WraperLayout } from '@/components/layouts/CommonLayout';
+import { WrapLayout } from '@/components/layouts/CommonLayout';
 import { PaginationLayout } from '@/components/share/PaginationLayout';
 
 
@@ -17,12 +17,10 @@ interface HomePageProps {
 
 const HomePage: NextPageWithLayout<HomePageProps> = ({ comics }) => {
 
-  // console.log(comics)
-
   return (
     <>
       <Head />
-      <WraperLayout className="py-5">
+      <WrapLayout className="py-5">
 
         <div className='lg:flex -mx-4'>
           <div className="lg:w-8/12 px-4">
@@ -37,7 +35,7 @@ const HomePage: NextPageWithLayout<HomePageProps> = ({ comics }) => {
           </div>
         </div>
 
-      </WraperLayout>
+      </WrapLayout>
     </>
   )
 }

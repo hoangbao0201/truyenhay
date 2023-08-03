@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { WraperLayout } from "../layouts/CommonLayout";
+import { WrapLayout } from "../layouts/CommonLayout";
 
 
 const Header = () => {
@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <header className="bg-blue-600">
             <div className="w-full h-[50px]">
-                <WraperLayout className="flex">
+                <WrapLayout className="flex">
 
                     <Link title="Truyện tranh online" href={`/`}>
                         <p className="leading-[50px] text-2xl font-bold text-white">
@@ -23,7 +23,7 @@ const Header = () => {
                         </div>
                     </div>
                     
-                </WraperLayout>
+                </WrapLayout>
             </div>
         </header>
     )

@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 
-import ItemComic from "../patials/ItemComic";
+import ItemComic from "./ItemComic";
 
 
 interface ListComicsProps {

@@ -1,18 +1,18 @@
-import { ReactNode } from "react"
+import { ReactNode } from "react";
 
+import cn from "clsx";
 
-interface WraperLayoutProps {
+interface WrapLayoutProps {
     children: ReactNode
-    className?: string
+    className?: string;
 }
-const WraperLayout = ({children, className} : WraperLayoutProps) => {
+const WrapLayout : React.FC<WrapLayoutProps> = ({children, className}) => {
 
     return (
-        <div className={`lg:max-w-6xl max-w-3xl w-full mx-auto px-4 ${className}`}>
+        <div className={cn(className,"lg:max-w-6xl max-w-3xl w-full mx-auto px-4")}>
             {children}
         </div>
     )
 }
 
-
-export { WraperLayout }
+export { WrapLayout }

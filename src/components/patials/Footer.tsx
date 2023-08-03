@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { WraperLayout } from "../layouts/CommonLayout";
+import { WrapLayout } from "../layouts/CommonLayout";
 
 
 const Footer = () => {
@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <footer className="bg-gray-600">
             <div className="w-full py-4">
-                <WraperLayout>
+                <WrapLayout>
                     <div className="pb-4 md:w-4/12 max-md:border-b ">
                         <h1 className="mb-3 text-2xl font-bold text-white">
                             <Link title="Truyện tranh online" href={`/`}>TRUYENHAY</Link>
@@ -47,7 +47,7 @@ const Footer = () => {
                             <li><Link target="_self" href="/">vcomi</Link></li>
                         </ul>
                     </div>
-                </WraperLayout>
+                </WrapLayout>
             </div>
         </footer>
     )

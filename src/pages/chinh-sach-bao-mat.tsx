@@ -1,9 +1,10 @@
-import MainLayout from "@/components/layouts/MainLayout";
-import Breadcrumb from "@/components/share/Breadcrumb";
-import Head from "@/components/share/Head";
 import Link from "next/link";
 import { ReactNode } from "react";
+
+import Head from "@/components/share/Head";
 import { NextPageWithLayout } from "./_app";
+import Breadcrumb from "@/components/share/Breadcrumb";
+import MainLayout from "@/components/layouts/MainLayout";
 
 
 const PolicyPage : NextPageWithLayout = () => {

@@ -21,3 +21,24 @@ export const getChaptersByNovel = async (query?: string) => {
         }
     }
 }
+
+export const getChapterDetailHandle = async (query?: string) => {
+    try {
+        const chapters = await axios.get(`https://cmangaah.com/api/rss_chapter?chapter=953162`, {
+            headers: {
+
+            }, 
+        })
+    
+        return chapters.data
+    } catch (error) {
+        if(axios.isAxiosError(error) && error.response?.data) {
+            return error.response.data;
+        } else {
+            return {
+                success: false,
+                message: (error as Error).message
+            };
+        }
+    }
+}

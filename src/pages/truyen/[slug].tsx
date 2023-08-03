@@ -4,7 +4,7 @@ import { GetStaticPaths, GetStaticProps } from "next";
 
 import MainLayout from "@/components/layouts/MainLayout";
 import Head from "@/components/share/Head";
-import { WraperLayout } from "@/components/layouts/CommonLayout";
+import { WrapLayout } from "@/components/layouts/CommonLayout";
 import { getComicBySlug } from "@/services/comics";
 import { iconAuthor, iconList } from "../../../public/icons";
 import { DATA_GENRES } from "@/lib/data";
@@ -25,7 +25,7 @@ const ComicDetail = ({ comic, chapters }: ComicDetailProps) => {
     return (
         <>
             <Head />
-            <WraperLayout className="bg-gray-50 py-5">
+            <WrapLayout className="bg-gray-50 py-5">
                 <div className="-mx-4 lg:flex">
                     
                     <div className="lg:w-8/12">
@@ -121,7 +121,7 @@ const ComicDetail = ({ comic, chapters }: ComicDetailProps) => {
                     </div>
 
                 </div>
-            </WraperLayout>
+            </WrapLayout>
         </>
     )
 }
